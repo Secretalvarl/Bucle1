@@ -8,7 +8,8 @@ namespace Bucle1.Controladores
         static void Main(string[] args)
         {
             int numero1;
-            int suma = 0;
+            int suma;
+            int operacion;
 
             MenuInterfaz alpha = new MenuImplementacion();
             numero1 = alpha.pedirNumero();
@@ -16,11 +17,11 @@ namespace Bucle1.Controladores
             SumaInterfaz omega = new SumaImplementacion();
             suma = omega.sumaDigitos();
 
-            for (int i = numero1 ; numero1 >= 0; numero1--)
+            for (int i = numero1 ; i >= 0; i--)
             {
-               suma = suma + numero1;
+               operacion = suma + i;
 
-                Console.WriteLine( "El resultado es : " + suma );
+                Console.WriteLine( "El resultado es : " + operacion);
 
             }
 
