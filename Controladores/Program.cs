@@ -19,12 +19,12 @@ namespace Bucle1.Controladores
 
             for (int i = numero1 ; i >= 0; i--)
             {
-               operacion = suma + i;
+               suma = suma + i;
 
-                Console.WriteLine( "El resultado es : " + operacion);
-
+                Console.WriteLine("Todas sumas : " + suma);
             }
 
+            Console.WriteLine("El resultado es : " + suma);
         }
     }
 }
